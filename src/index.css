@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Space+Grotesk&display=swap');
+
+:root {
+
+font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-feature-settings: "clig" off, "liga" off;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  --primary-color: #21092f;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+}
+button {
+  height: 3.3125rem;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.gradient {
+  background: linear-gradient(164deg, #6348fe 4.74%, #610595 88.83%);
+}
+.gradient_two {
+  background: linear-gradient(169deg, #fff 5%, #d2d3d9 91.69%);
+}
+.gridClass {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.backgroundImage {
+  background-image: url("./assets/cover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+@media (max-width: 768px) {
+  .gridClass {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10em;
+  }
+}
