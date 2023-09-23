@@ -50,7 +50,7 @@ const Interactive = () => {
     <>
       <section className="gridClass min-w-fit">
         <div className="backgroundImage  h-[15rem] md:h-[100vh] relative flex flex-col gap-1">
-          <div className=" w-[20.8125rem] h-fit md:w-[27.9375rem] md:h-[15.3125rem] rounded-[0.625rem] gradient relative md:absolute left-5 md:left-[50px] lg:right-[-100px] px-6 py-7 md:py-4 top-[70%] md:top-[10vh] min-w-fit z-10">
+          <div className=" w-[20.8125rem] h-fit md:w-[27.9375rem] md:h-[15.3125rem] rounded-[0.625rem] gradient absolute left-5 md:left-[60px] lg:right-[-100px] px-6 py-7 md:py-4 top-[70%] md:top-[10vh] min-w-fit z-10">
             <img src={IconLogo} alt="icons" />
             <h2 className="md:text-[1.75rem] font-medium tracking-[0.21588rem] relative top-2 md:top-[80px] text-left mb-6 md:mb-0">
               {cardDetails.cardNumber
@@ -64,7 +64,7 @@ const Interactive = () => {
             <p>{cardDetails.cardExpMM?`${cardDetails.cardExpMM}`:"00"}/{cardDetails.cardExpYY?cardDetails.cardExpYY:"00"}</p>
             </article>
           </div>
-          <div className=" w-[17.875rem] h-fit md:w-[27.9375rem] md:h-[15.3125rem] rounded-[0.625rem] gradient_two absolute  right-4 md:left-[50px] lg:right-[-200px] top-6 md:top-[53vh]  py-8 md:py-4 min-w-fit">
+          <div className=" w-[17.875rem] h-fit md:w-[27.9375rem] md:h-[15.3125rem] rounded-[0.625rem] gradient_two absolute  right-4 md:left-[150px] lg:right-[-200px] top-6 md:top-[53vh]  py-8 md:py-4 min-w-fit">
             <p className="h-[3.375rem] bg-[#2f2f2f]"></p>
             <article className="px-6 rounded bg-[#ADB5BE] h-[2.375rem] mx-8 py-2  my-4">
               <h4 className="text-right text-[0.875rem] font-medium tracking-[0.125rem]">
